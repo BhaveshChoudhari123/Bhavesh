@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Items</title>
+    <link rel="stylesheet" href="style.css">
+    <style>body{
+        width: 100%;
+       background:  url(restrrr.png);
+       background-position: center;
+       background-size: cover;
+       height: 90vh;
+       background-color: #111;
+       color: white;
+       }
+
+
+       
+        body{
+        width: 100%;
+       background:  url(restrrr.png);
+       background-position: center;
+       background-size: cover;
+       height: 109vh;
+       background-color: #111;
+       color: white;
+       }
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero{
+    min-height: 150vh;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+.logo{
+    color: #e78f38;
+    font-size: 30px;
+    font-weight: bolder;
+    transition: .3s;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+nav {
+    margin-left: auto; /* Pushes navigation to the right */
+    text-align: right;
+}
+
+.logo:hover{
+    transform: translateX(20px);
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-align: right;
+}
+
+nav ul li{
+    margin: 0 20px;
+    text-decoration: none;
+    text-align: right;
+}
+
+nav ul li a{
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #e78f38;
+    text-decoration: none;
+}
+
+nav button{
+    background: red;
+    border: none;
+    color: #fff;
+    padding: 12px 35px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 2rem;
+    transition: .3s;
+    text-decoration: none;
+    text-align: right;
+}
+
+nav button:hover{
+    scale: .8;
+    text-decoration: none;
+    text-align: right;
+}
+
+.content{
+    position: absolute;
+    top: 35%;
+    left: 90px;
+    text-decoration: none;
+}
+
+h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+p{
+    font-size: 10px;
+    margin-top: 10px;
+    color: #eee;
+}
+
+.content button{
+    margin-top: 50px;
+    background: red;
+    border: 2px solid #e78f38;
+    color: #fff;
+    padding: 12px 45px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 2rem;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.content button:hover{
+    scale: .8;
+    text-decoration: none;
+}
+    
+       </style>
+   
+</head>
+<body>
+
+    <body>
+        <section class="hero">
+            <nav>
+                <a href="#" class="logo">OrderEase</a>
+    
+                <ul>
+                    <li><a href="index.html"><button>Home</button></a></li>
+                    <li><a href="view_cart.php"><button>Cart</button></a></li>
+                    
+                    
+                </ul>
+                
+            </nav>
+    
+            
+        </div>
+    </body>
+
+    <main>
+        <h1>Our Menus</h1>
+        <div class="product-list">
+            <div class="product">
+                <img src="Pizza.jpg" alt="Pizza" height="250px" width="200px">
+                <h2>Pizza</h2>
+                <p class="price">Price: &#8377 120</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="Pizza">
+                    <input type="hidden" name="price" value="20">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p2.jpg" alt="Burger" height="250px" width="200px">
+                <h2>Burger</h2>
+                <p class="price">Price: &#8377 80</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="Burger">
+                    <input type="hidden" name="price" value="40">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p3.jpg" alt="Dosa" height="250px" width="200px">
+                <h2>Dosa</h2>
+                <p class="price">Price: &#8377  50</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="Dosa">
+                    <input type="hidden" name="price" value="40">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p4.jpg" alt="protein" height="250px" width="200px">
+                <h2>Pre-workout Protein</h2>
+                <p>High Quality protein for your daily exercise.</p>
+                <p class="price">Price: &#8377 $30</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="protein">
+                    <input type="hidden" name="price" value="40">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p5.jpg" alt="pre-worlkout" height="250px" width="200px">
+                <h2>C4-Ultimate</h2>
+                <p>Ultimate Pre-Workout Performance.</p>
+                <p class="price">Price: &#8377 $30</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="pre-workout">
+                    <input type="hidden" name="price" value="40">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p6.jpg" alt="protein bar" height="250px" width="200px">
+                <h2>MyProtein</h2>
+                <p>Oats & Whey Protein Bar.</p>
+                <p class="price">Price: &#8377 $15</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="protein bar">
+                    <input type="hidden" name="price" value="40">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p7.jpg" alt="protein" height="250px" width="200px">
+                <h2>WheyTotale</h2>
+                <p>High quality protein for your daily exercise.</p>
+                <p class="price">Price: &#8377 $50</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="protein">
+                    <input type="hidden" name="price" value="40">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p8.jpg" alt="Protein" height="250px" width="200px">
+                <h2>HighProtein</h2>
+                <p>High quality protein for your exercise.</p>
+                <p class="price">Price: &#8377 $10</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="Protein">
+                    <input type="hidden" name="price" value="20">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p9.jpg" alt="Creatine" height="250px" width="200px">
+                <h2>Wellcore Creatine</h2>
+                <p>Monohydrate Creatine for your daily post-workout exercise<post-workout></post-workout>.</p>
+                <p class="price">Price: &#8377 $35</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="Creatine">
+                    <input type="hidden" name="price" value="20">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p10.jpg" alt="protein" height="250px" width="200px">
+                <h2>RAD MAX</h2>
+                <p>High quality protein for your daily exercise.</p>
+                <p class="price">Price: &#8377 $100</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="protein">
+                    <input type="hidden" name="price" value="20">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p11.jpg" alt="Creatine" height="250px" width="200px">
+                <h2>RAW Creatine</h2>
+                <p>Creatine Monohydrate for your daily post workout.</p>
+                <p class="price">Price: &#8377 $50</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="creatine">
+                    <input type="hidden" name="price" value="20">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p12.jpg" alt="protein" height="250px" width="200px">
+                <h2>ONE Performance</h2>
+                <p>One Performance's BCAA Suppliment.</p>
+                <p class="price">Price: &#8377 $60</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="protein">
+                    <input type="hidden" name="price" value="20">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p13.jpg" alt="protein bar" height="250px" width="200px">
+                <h2>Maxi</h2>
+                <p>high energy protein bar for your daily exercise.</p>
+                <p class="price">Price: &#8377 $60</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="protein bar">
+                    <input type="hidden" name="price" value="20">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p14.jpg" alt="Pull-Up Bar" height="250px" width="200px">
+                <h2>Pull-Up Bar</h2>
+                <p>Sturdy pull-up bar for upper body workouts.</p>
+                <p class="price">Price: &#8377 $60</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="Yoga Mat">
+                    <input type="hidden" name="price" value="20">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p15.jpg" alt="Pull-Up Bar" height="250px" width="200px">
+                <h2>Pull-Up Bar</h2>
+                <p>Sturdy pull-up bar for upper body workouts.</p>
+                <p class="price">Price: &#8377 $60</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="Yoga Mat">
+                    <input type="hidden" name="price" value="20">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p16.jpg" alt="Pull-Up Bar" height="250px" width="200px">
+                <h2>Pull-Up Bar</h2>
+                <p>Sturdy pull-up bar for upper body workouts.</p>
+                <p class="price">Price: &#8377 $60</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="Yoga Mat">
+                    <input type="hidden" name="price" value="20">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p17.jpg" alt="Pull-Up Bar" height="250px" width="200px">
+                <h2>Pull-Up Bar</h2>
+                <p>Sturdy pull-up bar for upper body workouts.</p>
+                <p class="price">Price: &#8377 $60</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="Yoga Mat">
+                    <input type="hidden" name="price" value="20">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p18.jpg" alt="Pull-Up Bar" height="250px" width="200px">
+                <h2>Pull-Up Bar</h2>
+                <p>Sturdy pull-up bar for upper body workouts.</p>
+                <p class="price">Price: &#8377 $60</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="Yoga Mat">
+                    <input type="hidden" name="price" value="20">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p19.jpg" alt="Pull-Up Bar" height="250px" width="200px">
+                <h2>Pull-Up Bar</h2>
+                <p>Sturdy pull-up bar for upper body workouts.</p>
+                <p class="price">Price: &#8377 $60</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="Yoga Mat">
+                    <input type="hidden" name="price" value="20">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+            <div class="product">
+                <img src="p20.jpg" alt="Pull-Up Bar" height="250px" width="200px">
+                <h2>Pull-Up Bar</h2>
+                <p>Sturdy pull-up bar for upper body workouts.</p>
+                <p class="price">Price: &#8377 $60</p>
+                <form action="add_to_cart.php" method="post">
+                    <input type="hidden" name="product" value="Yoga Mat">
+                    <input type="hidden" name="price" value="20">
+                    <button type="submit" class="add-to-cart">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: url('restrrr.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    color: #e78f38;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+p {
+    color: red;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input {
+    padding: 13px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 120%;
+}
+
+button {
+    background: red;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 120%;
+}
+
+button:hover {
+    background: #e78f38;
+}
+    </style>
+</head>
+<body>
+    <h2>Register</h2>
+    <form action="register.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
+
